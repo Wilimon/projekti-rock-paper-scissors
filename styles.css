@@ -11,7 +11,7 @@ ol {
   margin-left: 0;
 }
 
-.gameResult, .computer, .human{
+/* .gameResult, .computer, .human{
   width: 100px;
   height: 100px;
   display: flex;
@@ -36,7 +36,7 @@ ol {
 
 .gameResult {
   margin: 20px;
-}
+} */
 
 
 

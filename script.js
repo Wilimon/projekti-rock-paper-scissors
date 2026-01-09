@@ -41,7 +41,7 @@ function playRound() {
 
   if (humanChoice === computerChoice) {
     console.log(`It's a tie, the score is: you = ${humanPoints}, computer = ${computerPoints}`)
-    // case human has chosen paper
+    // case human has chosen rock
   } else if (humanChoice === hands[0] && computerChoice === hands[1]) {
     computerPoints++;
     console.log(`You lost, the computer picked ${computerChoice}.
@@ -73,11 +73,11 @@ function playRound() {
 function playGame() {
   playRound();
   if (computerPoints === 5) {
-    console.log("You lost! Play again.")
+    console.log("You lost the game! Play again. The score is reset.")
     computerPoints = 0;
     humanPoints = 0;
   } else if (humanPoints === 5) {
-    console.log("You won! Congratulations!")
+    console.log("You won the game! Congratulations! The score is reset.")
     computerPoints = 0;
     humanPoints = 0;
   }
